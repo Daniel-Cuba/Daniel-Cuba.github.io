@@ -1,0 +1,472 @@
+/* ------------------------------ */
+/* ----- Reset css -------------- */
+/* ------------------------------ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ------------------------------- */
+/* ---- Html and body ------------ */
+/* ------------------------------- */
+html {
+	min-height: 100%;
+}
+
+body {
+	padding-top: 3%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-image: url(images/desktop-1245714_1920.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100%;
+}
+
+/* -------------------------------------- */
+/* -- The container to the form validation */
+/* -------------------------------------- */
+.container {
+	display: relative;
+	width: 50%;
+	margin: auto;
+	padding: 25px;
+	width: 55%;
+
+	background-color: white;
+	border-style: none;
+	border-color: rgba(0, 0, 0, 0.322);
+	border-radius: 20px;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+	line-height: 60px;
+}
+
+/* ----------------------------------- */
+/*--------- Form header ------------- */
+/* --------------------------------- */
+h1 {
+	width: 50%;
+	margin: auto;
+	width: 100%;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+/* -------------------------------- */
+/* Inputs elements inside the form */
+/* ------------------------------- */
+input,
+select {
+	padding: 8px;
+	font-size: 16px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.384);
+	border-radius: 10px;
+}
+
+/* ----------------------------------- */
+/* ----------The forms p elements ----*/
+/* ---------------------------------- */
+form p {
+	display: inline-block;
+	padding-left: 15%;
+	font-weight: 600;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------------------------------- */
+/* ----- Input submit button ------------------------ */
+/* ------------------------------------------------- */
+
+.btn {
+	padding-top: 35px;
+}
+
+#btnSubmit {
+	display: block;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+}
+
+/* ---------------------------------------------- */
+/* The message alert in red when a field is wrong */
+/* --------------------------------------------- */
+.message {
+	position: absolute;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 10px;
+	color: red;
+	font-weight: 500;
+}
+
+/* ------------------------------------------------ */
+/* This class will be add if the field is incorrect */
+/* ----------------------------------------------- */
+.form-alert input:focus,
+.form-alert textarea:focus,
+.form-alert select:focus {
+	border: 1px solid red !important;
+	box-shadow: 0 0 3px red !important;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Prevent change the border color to a dark black when we click on the input */
+/* ------------------------------------------------------------------------- */
+input:focus,
+textarea:focus,
+select:focus {
+	outline-offset: 0px !important;
+	outline: none !important;
+}
+
+/* ---------------------------------------------------- */
+/* Style to the icon check and the input in green stage*/
+/* -------------------------------------------------- */
+.form-green {
+	border: 1px solid green !important;
+	box-shadow: 0 0 3px green !important;
+}
+
+/* --------------------------------------- */
+/* Set the green color to the check icons */
+/* ------------------------------------- */
+.fa {
+	color: green;
+	transition: .2s ease-in-out;
+}
+
+/* ------------------------ */
+/* Style to the result box */
+/* ---------------------- */
+
+.resumeContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+	background-color: rgba(23, 23, 24, 0.815);
+	transition: .6s ease-in-out;
+}
+
+/* ----------------------------------------------------------------- */
+/* ------ Message section that would be show inside resumeContainer */
+/* --------------------------------------------------------------- */
+.results {
+	width: 50%;
+	margin: auto;
+	width: 50%;
+	padding: 2% 0 2% 0;
+
+	font-size: 25px;
+	font-weight: 500;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.results i {
+	margin-left: 1%;
+	font-size: 30px;
+	transition: .1s ease;
+}
+
+/*--------------------------------------------------- */
+/* ------------ MEDIA queries ------------------------*/
+/*-------------------------------------------------- */
+
+/* --- 320px or less ---  */
+@media (max-width: 320px) {
+
+	body {
+		padding: 20px;
+	}
+
+	.container {
+		width: 80%;
+		height: 50%;
+		line-height: 1rem;
+		margin-top: 8%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	#warning {
+		font-size: 12px;
+	}
+
+	h1 {
+		width: 100%;
+		font-size: 11px;
+	}
+
+	input,
+	select {
+		font-size: 0.8rem;
+		width: 100%;
+	}
+
+	form p {
+		padding-left: 0;
+		margin-top: 10%;
+		margin-bottom: 1%;
+		font-size: 12px;
+	}
+
+	#btnSubmit {
+		width: 50%;
+		font-size: 11px;
+	}
+
+	.results{
+		font-size: 14px;
+		width: 60%;
+		padding: 5%;
+	}
+
+	.results i{
+		font-size: 14px;
+	}
+}
+
+/* ---- Between 321px and 600px ------------- */
+@media (min-width: 321px) and (max-width: 600px) {
+	body {
+		padding: 20px;
+	}
+
+	.container {
+		width: 70%;
+		height: 50%;
+		line-height: 1rem;
+		margin-top: 8%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	#warning {
+		font-size: 12px;
+	}
+
+	h1 {
+		width: 100%;
+		font-size: 0.7rem;
+	}
+
+	input,
+	select {
+		font-size: 0.8rem;
+		width: 100%;
+	}
+
+	form p {
+		padding-left: 0;
+		margin-top: 10%;
+		margin-bottom: 1%;
+		font-size: 12px;
+	}
+
+	#btnSubmit {
+		width: 50%;
+		font-size: 14px;
+	}
+
+	.results{
+		font-size: 16px;
+		width: 60%;
+		padding: 3%;
+	}
+
+	.results i{
+		font-size: 16px;
+	}
+}
+
+/* --------- Between 601px and 768px ------------ */
+@media (min-width: 601px) and (max-width: 768px) {
+	body {
+		padding: 20px;
+	}
+
+	.container {
+		width: 60%;
+		height: 50%;
+		line-height: 1rem;
+		margin-top: 8%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	#warning {
+		font-size: 14px;
+	}
+
+	h1 {
+		width: 100%;
+		font-size: 1.5rem;
+		line-height: 25px;
+	}
+
+	input,
+	select {
+		font-size: 0.8rem;
+		width: 100%;
+	}
+
+	form p {
+		padding-left: 0;
+		margin-top: 10%;
+		margin-bottom: 1%;
+		font-size: 12px;
+	}
+
+	#btnSubmit {
+		width: 50%;
+		font-size: 14px;
+	}
+
+	.results{
+		font-size: 16px;
+		width: 60%;
+		padding: 3%;
+	}
+
+	.results i{
+		font-size: 16px;
+	}
+
+}
+
+/* ----- Between 768px and 992px -------------- */
+@media (min-width: 768px) and (max-width: 992px) {
+	body {
+		padding: 10px;
+	}
+
+	.container {
+		width: 45%;
+		height: 50%;
+		line-height: 1rem;
+		margin-top: 5%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	#warning {
+		font-size: 14px;
+	}
+
+	h1 {
+		width: 100%;
+		font-size: 1.5rem;
+		line-height: 25px;
+	}
+
+	input,
+	select {
+		font-size: 1rem;
+		width: 100%;
+	}
+
+	form p {
+		padding-left: 0;
+		margin-top: 10%;
+		margin-bottom: 1%;
+		font-size: 12px;
+	}
+
+	#btnSubmit {
+		width: 50%;
+		font-size: 14px;
+	}
+
+	.results{
+		font-size: 20px;
+		width: 50%;
+		padding: 3%;
+	}
+
+	.results i{
+		font-size: 20px;
+	}
+}
+
+/* ------ More than 992px -----  */
+@media (min-width: 992px) {
+	body {
+		padding: 10px;
+	}
+
+	.container {
+		max-width: 30%;
+		height: 50%;
+		line-height: 1rem;
+		margin-top: 5%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	#warning {
+		position: relative;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	h1 {
+		width: 100%;
+		font-size: 1.2rem;
+		line-height: 25px;
+	}
+
+	input,
+	select {
+		font-size: 1rem;
+		width: 100%;
+	}
+
+	form p {
+		padding-left: 0;
+		margin-top: 10%;
+		margin-bottom: 1%;
+		font-size: 14px;
+	}
+
+	#btnSubmit {
+		width: 50%;
+		font-size: 14px;
+	}
+
+	.results{
+		width: 40%;
+	}
+}
