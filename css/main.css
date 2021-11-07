@@ -431,6 +431,8 @@ footer h5 span {
 	}
 
 	.main-container {
+		border: 2px yellow solid;
+		/* margin-top: 25%; */
 		margin-top: 5%;
 		margin-bottom: 30%;
 		height: 300px;
