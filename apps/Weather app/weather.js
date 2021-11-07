@@ -16,7 +16,7 @@ function startApp() {
 // ------------------------
 const api = {
 	key: "c12aafeddd994d51bb66ba46d740709e",
-	base: "http://api.openweathermap.org/data/2.5/"
+	base: "https://api.openweathermap.org/data/2.5/"
 };
 // -------------------------------------------------------------------------
 //-- We storge an input from the search box and we set a event listener to them
