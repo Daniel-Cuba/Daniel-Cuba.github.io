@@ -1,2 +1,0 @@
-# D-projects
-Projects website 
