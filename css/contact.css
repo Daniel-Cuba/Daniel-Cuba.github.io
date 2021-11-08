@@ -1,0 +1,610 @@
+/* ---------------------------------------- */
+/* --------- Css reset -------------------- */
+/* ---------------------------------------- */
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+/* ---------------------------------------------------- */
+/* -- Body and Html */
+/* ---------------------------------------------------- */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url(../images/Purpel.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------- */
+/* -- P elements and header text shadowns */
+/* ---------------------------------------------------- */
+
+p,
+h1 {
+	text-shadow: 2px 2px 5px black;
+}
+
+/* ---------------------------------------------- */
+/*-------------------NAVBAR SECTION---------------*/
+/* ----------------------------------------------- */
+.navbar {
+	position: fixed;
+	width: 100%;
+	max-height: 20%;
+	color: white;
+	box-shadow: 0 -2px 30px 5px rgba(15, 15, 15, 0.582);
+	background-color: #090a0a;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/web-black.jpg);
+	background-size: cover;
+	background-position: center;
+	animation: fadeIn 1.5s;
+	z-index: 1;
+}
+
+.navbar-center {
+	margin: auto;
+	max-width: 90%;
+	height: 100%;
+	align-items: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.ul-links {
+	height: 100%;
+	float: right;
+}
+
+.ul-links li {
+	max-height: 100%;
+	display: inline-block;
+	margin-inline: 1rem;
+	padding: 0.8rem 0;
+}
+
+.ul-links a {
+	font-size: 15px;
+	color: white;
+	border-radius: 450px;
+	text-shadow: 2px 2px 4px black;
+	text-transform: uppercase;
+	padding: 4px 8px;
+}
+
+.active:hover {
+	background: #faf7f71e;
+	transition: .5s;
+}
+
+.anchor {
+	max-height: 90%;
+	float: left;
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.imageLogo {
+	height: 100%;
+	width: 8.7rem;
+	display: block;
+}
+
+.imageLogo:hover {
+	animation: shake 0.8s;
+	transition: .5s;
+}
+
+#iconNav {
+	display: none;
+	float: right;
+	margin-right: 2rem;
+	color: white;
+	font-size: 1.5rem;
+}
+
+
+/* ---------------------------------------------- */
+/*------- Contact info section  ------------------*/
+/* ----------------------------------------------- */
+.contact-container {
+	max-width: 100%;
+	height: 100vh;
+	color: white;
+}
+
+
+/* ---------------------------------------------- */
+/*------- Info main section  ----------------------*/
+/* ----------------------------------------------- */
+.main-info {
+	width: 100%;
+	height: 100vh;
+}
+
+/* ---------------------------------------------- */
+/*------- Left side of the info section------------*/
+/* ----------------------------------------------- */
+
+.info-left {
+	line-height: 55px;
+	display: inline-block;
+	max-width: 100%;
+	padding-top: 12%;
+	padding-left: 12%;
+}
+
+/* ----------------------------------------------- */
+/*------------- Info header -------------- */
+/* ----------------------------------------------- */
+.contact-header {
+	width: 100%;
+	margin-bottom: 10%;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	animation: fadeIn 2.5s;
+}
+
+/* --------------------------------------- */
+/* -------- Other info elementer ----------*/
+/* --------------------------------------- */
+.list-info i,
+.list-info p {
+	display: inline-block;
+}
+
+.info-left i {
+	color: white;
+	font-size: 35px;
+	margin-right: 5%;
+}
+
+.info-left p {
+	font-size: 20px;
+	text-shadow: black;
+	letter-spacing: 1px;
+	animation: fadeIn 1.5s;
+}
+
+/* -------------------------------------------------- */
+/* -------- Right side of the info section ----------*/
+/* ------------------------------------------------- */
+
+.profile-img {
+	position: absolute;
+	right: 25%;
+	top: 25%;
+
+	background-image: url(../images/daniel.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 40%;
+	width: 20%;
+	border-radius: 50%;
+	box-shadow: 2px 2px 8px 4px rgba(252, 246, 246, 0.1);
+	animation: fadeIn 2.5s;
+}
+
+/* -------------------------------------------- */
+/*-----------Keyframes setup-------------------*/
+/* ------------------------------------------- */
+@keyframes fade {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		opacity: 0;
+		transform: translateY(0%);
+	}
+
+	5% {
+		opacity: 0;
+		transform: translateY(15%);
+	}
+
+	10% {
+		opacity: 0.1;
+		transform: translateY(25%);
+	}
+
+	20% {
+		opacity: 0.2;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+/* ---------------- MEDIA QUERIES -------------------------*/
+
+/* ******************************************************* */
+/* 320 px mobil small screen */
+/* ******************************************************* */
+
+@media (max-width: 320px) {
+
+	html,body{
+		max-width: 100%;
+		min-height: 100%;
+	}
+
+
+	.navbar {
+		position: fixed;
+		display: flexbox;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 100%;
+		height: 4rem;
+	}
+
+	#iconNav {
+		display: inline-block;
+		margin-top: 9px;
+	}
+
+	.ul-links {
+		position: absolute;
+		right: 0;
+		top: 2.5rem;
+
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 200px;
+		margin-top: clamp(20px, 3vw, 3rem);
+
+		background-color: rgba(54, 52, 52, 0.562);
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		margin-bottom: 15%;
+		margin-right: 0px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/web-black.jpg);
+		background-size: cover;
+		background-position: center;
+
+		animation: fade;
+		animation-duration: .4s;
+	}
+
+	.contact-container {
+		padding-top: 20%;
+		max-width: 100%;
+		height: 80vh;
+	}
+
+	.main-info {
+		height: 300px;
+	}
+
+	.contact-header {
+		width: 100%;
+		height: auto;
+		letter-spacing: 0px;
+		animation: fadeIn 2.5s;
+	}
+
+	.contact-header h1 {
+		font-size: 14px;
+		text-align: left;
+		display: inline;
+		margin-top: 12%;
+		padding-bottom: 5%;
+	}
+
+
+	.info-left {
+		line-height: normal;
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+		padding: 9%;
+	}
+
+	.list-info i,
+	.list-info p {
+		font-size: 12px;
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.info-left li {
+		max-width: 100%;
+	}
+
+	.profile-img {
+		position: none;
+		top: 55%;
+		right: none;
+		left: 25%;
+		width: 45%;
+		height: 25%;
+		margin: auto;
+	}
+}
+
+/* ********************************** */
+/* Screen 321px to 600px */
+/* ********************************* */
+@media (min-width: 321px) and (max-width: 600px) {
+
+	.navbar {
+		position: fixed;
+		display: flexbox;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 100px;
+		height: 4rem;
+	}
+
+	#iconNav {
+		display: inline-block;
+		margin-top: 9px;
+	}
+
+	.ul-links {
+		position: absolute;
+		right: 0;
+		top: 4rem;
+
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		height: 200px;
+		background-color: rgba(54, 52, 52, 0.562);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+
+		margin-bottom: 15%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/web-black.jpg);
+		background-size: cover;
+		background-position: center;
+
+		animation: fade;
+		animation-duration: .4s;
+	}
+
+	.contact-container {
+		padding-top: 10%;
+		max-width: 100%;
+	}
+
+	.main-info {
+		height: 300px;
+	}
+
+	.contact-header {
+		width: 100%;
+		height: auto;
+		letter-spacing: 0px;
+		animation: fadeIn 2.5s;
+	}
+
+	.contact-header h1 {
+		margin-top: 2%;
+		font-size: 17px;
+		text-align: left;
+		display: inline;
+	}
+
+
+	.info-left {
+		line-height: 3rem;
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+		padding-top: 12%;
+		padding-left: 5%;
+	}
+
+	.list-info i,
+	.list-info p {
+		font-size: clamp(12px, 3vw, 25px);
+		max-width: 100%;
+		margin-right: 0.5rem;
+	}
+
+	.info-left li {
+		max-width: 100%;
+	}
+
+	.profile-img {
+		top: clamp(70%, 2vw, 80%);
+		right: 10%;
+		margin: auto;
+		max-width: 20%;
+		max-height: 22%;
+	}
+}
+
+/* ********************************** */
+/* Screen 601px to 768px */
+/* ********************************* */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+
+	.navbar {
+		position: fixed;
+		display: flexbox;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 100px;
+		height: 4rem;
+	}
+
+	#iconNav {
+		display: inline-block;
+		margin-top: 9px;
+	}
+
+	.ul-links {
+		position: absolute;
+		right: 0;
+		top: 2.5rem;
+
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		height: 200px;
+		margin-top: clamp(20px, 3vw, 3rem);
+
+		background-color: rgba(54, 52, 52, 0.562);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+
+		margin-bottom: 15%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/web-black.jpg);
+		background-size: cover;
+		background-position: center;
+
+		animation: fade;
+		animation-duration: .4s;
+	}
+
+	.main-info {
+		max-width: 100%;
+	}
+
+	.contact-header {
+		margin-bottom: 2%;
+	}
+
+	.contact-header h1 {
+		margin-top: 5%;
+		font-size: clamp(14px, 3vw, 20px);
+		text-align: left;
+		display: inline;
+	}
+
+	.info-left {
+		line-height: 3rem;
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+		padding-top: 15%;
+		padding-left: 5%;
+	}
+
+	.list-info i,
+	.list-info p {
+		font-size: clamp(14px, 3vw, 16px);
+		max-width: 100%;
+		margin-right: 0.5rem;
+	}
+
+	.info-left li {
+		max-width: 100%;
+	}
+
+	.profile-img {
+		top: 15%;
+		right: 10%;
+		margin: auto;
+		max-width: 35%;
+		height: 30%;
+	}
+}
+
+/* ***************************************' */
+/* Screen min 768px to 992px */
+/* ***************************************' */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+	.contact-header{
+		font-size: clamp(12px, 3vw, 14px);
+
+	}
+	
+	.profile-img {
+		top: 20%;
+		right: 8%;
+		margin: auto;
+		min-width: 30%;
+		max-height: 42%;
+	}
+
+	.info-left p{
+		font-size: clamp(14px, 3vw, 16px);
+
+	}
+}
