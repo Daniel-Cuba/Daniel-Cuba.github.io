@@ -124,3 +124,5 @@ function leaveRotate() {
 
 rotateEffect.addEventListener('mouseover', enterRotate, false);
 rotateEffect.addEventListener('mouseleave', leaveRotate, false);
+
+var name ="daniel";
